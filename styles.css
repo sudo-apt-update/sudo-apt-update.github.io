@@ -28,3 +28,7 @@ footer {
     /* color: #60ccd2; */
     color: #ffff80;
 }
+
+.module {
+  cursor: url('cat.png'), auto;
+}
