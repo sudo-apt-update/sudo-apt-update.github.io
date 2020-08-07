@@ -4,6 +4,7 @@ body {
     padding: 20px;
     padding-left: 35px;
     padding-right: 35px;
+    cursor: url('cat.png'), auto;
 }
 
 h1 {
@@ -27,8 +28,4 @@ footer {
 .section {
     /* color: #60ccd2; */
     color: #ffff80;
-}
-
-.module {
-  cursor: url('cat.png'), auto;
 }
