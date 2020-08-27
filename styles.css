@@ -38,3 +38,9 @@ footer {
     /* color: #60ccd2; */
     color: #ffff80;
 }
+
+.pdf {
+	padding: 1px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
