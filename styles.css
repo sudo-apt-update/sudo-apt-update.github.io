@@ -7,7 +7,7 @@ body {
 	/*cursor: url('files/cat.png'), auto;*/
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: monaco;
     /* color: #3fc1c9; */
     color: #4cc6cd;
@@ -33,6 +33,10 @@ a:visited {
 footer {
     color: #4cf5d0;
     font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;            /* Footer height */
 }
 .section {
     /* color: #60ccd2; */
@@ -47,4 +51,12 @@ footer {
 
 .showme {
 	display: none;
+}
+.page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+.content-wrap {
+	padding-bottom: 2.5rem;    /* Footer height */
 }
