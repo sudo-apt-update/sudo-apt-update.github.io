@@ -2,16 +2,11 @@ body {
     background-color: #364f6b;
     font-family: monaco;
     padding: 20px;
-<<<<<<< Updated upstream
-    padding-left: 35px;
-    padding-right: 35px;
-=======
 	padding-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
 	max-width: 600px;
 	margin: auto;
->>>>>>> Stashed changes
 	/*cursor: url('files/cat.png'), auto;*/
 }
 
