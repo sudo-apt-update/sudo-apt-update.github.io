@@ -48,6 +48,8 @@ footer {
 	padding: 1px;
 	padding-left: 35px;
 	padding-right: 35px;
+	max-width: 950px;
+	margin: auto;
 }
 
 .showme {
