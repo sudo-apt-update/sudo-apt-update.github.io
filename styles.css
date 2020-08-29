@@ -2,8 +2,16 @@ body {
     background-color: #364f6b;
     font-family: monaco;
     padding: 20px;
+<<<<<<< Updated upstream
     padding-left: 35px;
     padding-right: 35px;
+=======
+	padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+	max-width: 600px;
+	margin: auto;
+>>>>>>> Stashed changes
 	/*cursor: url('files/cat.png'), auto;*/
 }
 
@@ -33,11 +41,17 @@ a:visited {
 footer {
     color: #4cf5d0;
     font-size: 12px;
+	text-align: center;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 2.5rem;            /* Footer height */
 }
+
+hr {
+	border: 1px dashed #fff;
+}
+
 .section {
     /* color: #60ccd2; */
     color: #ffff80;
@@ -52,6 +66,7 @@ footer {
 .showme {
 	display: none;
 }
+
 .page-container {
 	position: relative;
 	min-height: 100vh;

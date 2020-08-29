@@ -1,5 +1,5 @@
 window.onload = function() {
-	document.getElementById("footer").innerHTML = "Page loaded  " + Date() + "; page last edited Fri Aug 28 2020";
+	document.getElementById("footer").innerHTML = "Page loaded  " + Date() + "; Site edited Sat Aug 29 2020";
 }
 
 var hidden = true;
