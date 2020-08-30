@@ -21,6 +21,10 @@ var h = addZero(amPM(d.getHours()));
 var time = " " + h + ":" + addZero(d.getMinutes()) + ":" + addZero(d.getSeconds());
 
 window.onload = function() {
+	setFooter();
+}
+
+function setFooter() {
 	document.getElementById("footer").innerHTML = "Page loaded  " + date + " " + time + " " + t + "; Site edited Sat Aug 29 2020";
 }
 

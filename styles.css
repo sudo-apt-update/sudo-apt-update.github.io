@@ -73,3 +73,9 @@ hr {
 .content-wrap {
 	padding-bottom: 2.5rem;    /* Footer height */
 }
+
+.notesbloc, .learned a:link { color: #62d2a2; }
+
+.headtext {
+	font-size: 90%;
+}

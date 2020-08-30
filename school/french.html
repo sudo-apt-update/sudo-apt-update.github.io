@@ -8,29 +8,30 @@
     <link rel="stylesheet" type="text/css" href="../styles.css">
     <link rel="icon" href="../files/favicon.ico">
     <script src="../script.js"></script>
+	<script src="//script.sheetsu.com/"></script>
+	<script src="notes.js"></script>
 </head>
 
 <body>
-	<style>
-	a:link {
-		color: #62d2a2;
-	}
-	</style>
-	<script src="//load.sheetsu.com"></script>
 	<div class="page-container">
 		<div class="content-wrap">
 			<h1>
 				French
 			</h1>
 			<hr>
-			<div sheetsu="https://sheetsu.com/apis/v1.0su/8dda30f1dc5c" sheet="french">
-			    <p><strong>{{Date}}</strong> {{Notes}}</p>
-				<br>
+			<div class="notesbloc">
+				<div class="headtext" id="headtext"></div>
+			    <div id="notes"><p>Waiting for sheetsu...</p></div>
+				<hr>
 			</div>
-			<strong><a href="../index.html"  align="center" style="color:#f5f5f5">Go Back</a></strong>
+			<strong><a href="../index.html"  align="center">Go Back</a></strong>
 		</div>
-	<footer id="footer"></footer>
-</div>
+		<footer id="footer"></footer>
+	</div>
 </body>
+
+<script type="text/javascript">
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/8dda30f1dc5c", {sheet: "french"}).then(successFunc, errorFunc);
+</script>
 
 </html>
