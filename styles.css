@@ -29,7 +29,9 @@ a:hover {
 }
 
 a:visited {
-    color: #ffff80;
+    /* color: #ffff80; */
+	/* yellow */
+	color: #f5f5f5;
 }
 
 footer {
