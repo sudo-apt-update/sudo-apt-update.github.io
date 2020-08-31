@@ -25,7 +25,7 @@ window.onload = function() {
 }
 
 function setFooter() {
-	document.getElementById("footer").innerHTML = "Page loaded  " + date + " " + time + " " + t + "; Site edited Sat Aug 29 2020";
+	document.getElementById("footer").innerHTML = "Page loaded  " + date + " " + time + " " + t + "; Site updated Mon Aug 31 2020";
 }
 
 var hidden = true;
