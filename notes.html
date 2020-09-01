@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes | Anzhuo Wang</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" href="files/favicon.ico">
+	<script src="//script.sheetsu.com/"></script>
+</head>
+
+<body>
+	<h1><a href="https://docs.google.com/spreadsheets/d/1jzi05ODtP-F5aLtULX12SxqsHBvndCfslx4L0CANmW4/edit#gid=0">Notes</a></h1>
+	<hr>
+	<div id="data"></div>
+	<br>
+	<strong><a href="index.html">Go Back</a></strong>
+</body>
+
+<script>
+	function successFunc(data) {
+		data.forEach(function(note, i) {
+			document.getElementById("data").innerHTML += "<p>" + note.a + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.b + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.c + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.d + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.e + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.f + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.g + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.h + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.i + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.j + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.k + "</p>";
+			document.getElementById("data").innerHTML += "<p>" + note.l + "</p>";
+		});
+	}
+	function errorFunc(e) {
+	  console.log(e);
+	}
+
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/8c61d4d8b896", {}).then(successFunc, errorFunc);
+</script>
+
+</html>
