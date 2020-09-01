@@ -12,7 +12,7 @@
 <body>
 	<h1><a href="https://docs.google.com/spreadsheets/d/1jzi05ODtP-F5aLtULX12SxqsHBvndCfslx4L0CANmW4/edit#gid=0">Notes</a></h1>
 	<hr>
-	<div id="data"></div>
+	<div id="data" class="notesbloc"></div>
 	<br>
 	<strong><a href="index.html">Go Back</a></strong>
 </body>
@@ -38,7 +38,7 @@
 	  console.log(e);
 	}
 
-	Sheetsu.read("https://sheetsu.com/apis/v1.0su/8c61d4d8b896", {}).then(successFunc, errorFunc);
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/8c61d4d8b896", {sheet: "notes"}).then(successFunc, errorFunc);
 </script>
 
 </html>

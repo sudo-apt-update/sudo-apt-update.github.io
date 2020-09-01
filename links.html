@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links | Anzhuo Wang</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" href="files/favicon.ico">
+	<script src="//script.sheetsu.com/"></script>
+</head>
+
+<body>
+	<h1>Links</h1>
+	<hr>
+	<div id="links"></div>
+	<br>
+	<strong><a href="index.html">Go Back</a></strong>
+</body>
+
+<script>
+	function successFunc(data) {
+		data.forEach(function(link, i) {
+			document.getElementById("links").innerHTML += "<p>" + link.start + link.link + link.end + link.description + "</p>";
+			document.getElementById("links").innerHTML += "<p>" + link.start2 + link.link2 + link.end2 + link.description2 + "</p>";
+			document.getElementById("links").innerHTML += "<p>" + link.start3 + link.link3 + link.end3 + link.description3 + "</p>";
+		});
+	}
+	function errorFunc(e) {
+	  console.log(e);
+	}
+
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/8c61d4d8b896", {sheet: "links"}).then(successFunc, errorFunc);
+</script>
+
+</html>
