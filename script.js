@@ -12,7 +12,7 @@ function addZero(i) {
 function amPM(j) {
 	if (j > 11) {
 		if (j > 12){
-			j -= 11;
+			j -= 12;
 		}
 		t = "PM";
 	}
