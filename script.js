@@ -10,8 +10,10 @@ function addZero(i) {
 }
 
 function amPM(j) {
-	if (j > 12) {
-		j -= 12;
+	if (j > 11) {
+		if (j > 12){
+			j -= 11;
+		}
 		t = "PM";
 	}
 	return j;
@@ -25,7 +27,7 @@ window.onload = function() {
 }
 
 function setFooter() {
-	document.getElementById("footer").innerHTML = "Page loaded  " + date + " " + time + " " + t + "; Site updated Mon Aug 31 2020";
+	document.getElementById("footer").innerHTML = "Page loaded  " + date + " " + time + " " + t + "; Site updated Wed Sep 2 2020";
 }
 
 var hidden = true;

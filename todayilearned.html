@@ -30,10 +30,14 @@
 		<hr>
 	<footer id="footer"></footer>
 </div>
-</body>
 
-<script type="text/javascript">
-	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {}).then(successFunc, errorFunc);
+<script>
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "one"}).then(successFunc, errorFunc);
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "two"}).then(successFunc, errorFunc);
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "three"}).then(successFunc, errorFunc);
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "four"}).then(successFunc, errorFunc);
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "five"}).then(successFunc, errorFunc);
 </script>
 
+</body>
 </html>
