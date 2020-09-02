@@ -1,8 +1,6 @@
 window.onload = function() {
 	setHeadText();
 	setFooter();
-	// clear
-	document.getElementById("learned").innerHTML = ""
 }
 
 function setHeadText() {
