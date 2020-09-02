@@ -8,11 +8,20 @@ function setHeadText() {
 }
 
 function successFunc(data) {
+	document.getElementById("learned").innerHTML = "";
 	// add each note
 	data.forEach(function(thing, i) {
 	document.getElementById("learned").innerHTML += "<p> On " + thing.Date + ", " + thing.Learned + " " + thing.Thing + "</p>";
 	});
 }
+
+function succeedingPage(data) {
+	// add each note
+	data.forEach(function(thing, i) {
+	document.getElementById("learned").innerHTML += "<p> On " + thing.Date + ", " + thing.Learned + " " + thing.Thing + "</p>";
+	});
+}
+
 function errorFunc(e) {
   console.log(e);
 }

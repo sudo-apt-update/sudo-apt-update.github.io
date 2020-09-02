@@ -32,14 +32,11 @@
 </div>
 
 <script>
-	// clear
-	document.getElementById("learned").innerHTML = ""
-
 	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "one"}).then(successFunc, errorFunc);
-	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "two"}).then(successFunc, errorFunc);
-	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "three"}).then(successFunc, errorFunc);
-	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "four"}).then(successFunc, errorFunc);
-	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "five"}).then(successFunc, errorFunc);
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "two"}).then(succeedingPage, errorFunc);
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "three"}).then(succeedingPage, errorFunc);
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "four"}).then(succeedingPage, errorFunc);
+	Sheetsu.read("https://sheetsu.com/apis/v1.0su/10ada3b81b8c", {sheet: "five"}).then(succeedingPage, errorFunc);
 </script>
 
 </body>
