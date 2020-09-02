@@ -1,6 +1,8 @@
 window.onload = function() {
 	setHeadText();
 	setFooter();
+	// clear
+	document.getElementById("learned").innerHTML = ""
 }
 
 function setHeadText() {
@@ -8,8 +10,6 @@ function setHeadText() {
 }
 
 function successFunc(data) {
-	// clear
-	document.getElementById("learned").innerHTML = ""
 	// add each note
 	data.forEach(function(thing, i) {
 	document.getElementById("learned").innerHTML += "<p> On " + thing.Date + ", " + thing.Learned + " " + thing.Thing + "</p>";
